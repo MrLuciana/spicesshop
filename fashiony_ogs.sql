@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbl_color` (
   `color_id` int(11) NOT NULL,
   `color_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_color`
@@ -359,7 +359,7 @@ CREATE TABLE `tbl_customer` (
   `cust_datetime` varchar(100) NOT NULL,
   `cust_timestamp` varchar(100) NOT NULL,
   `cust_status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_customer`
@@ -381,7 +381,7 @@ CREATE TABLE `tbl_customer_message` (
   `message` text NOT NULL,
   `order_detail` text NOT NULL,
   `cust_id` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_customer_message`
@@ -404,7 +404,7 @@ CREATE TABLE `tbl_end_category` (
   `ecat_id` int(11) NOT NULL,
   `ecat_name` varchar(255) NOT NULL,
   `mcat_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_end_category`
@@ -481,7 +481,7 @@ CREATE TABLE `tbl_faq` (
   `faq_id` int(11) NOT NULL,
   `faq_title` varchar(255) NOT NULL,
   `faq_content` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_faq`
@@ -504,7 +504,7 @@ CREATE TABLE `tbl_language` (
   `lang_id` int(11) NOT NULL,
   `lang_name` varchar(255) NOT NULL,
   `lang_value` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_language`
@@ -685,7 +685,7 @@ CREATE TABLE `tbl_mid_category` (
   `mcat_id` int(11) NOT NULL,
   `mcat_name` varchar(255) NOT NULL,
   `tcat_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_mid_category`
@@ -719,7 +719,7 @@ CREATE TABLE `tbl_order` (
   `quantity` varchar(50) NOT NULL,
   `unit_price` varchar(50) NOT NULL,
   `payment_id` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_order`
@@ -767,7 +767,7 @@ CREATE TABLE `tbl_page` (
   `vgallery_meta_title` varchar(255) NOT NULL,
   `vgallery_meta_keyword` text NOT NULL,
   `vgallery_meta_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_page`
@@ -799,7 +799,7 @@ CREATE TABLE `tbl_payment` (
   `payment_status` varchar(25) NOT NULL,
   `shipping_status` varchar(20) NOT NULL,
   `payment_id` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_payment`
@@ -819,7 +819,7 @@ CREATE TABLE `tbl_photo` (
   `id` int(11) NOT NULL,
   `caption` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_photo`
@@ -851,7 +851,7 @@ CREATE TABLE `tbl_post` (
   `meta_title` varchar(255) NOT NULL,
   `meta_keyword` text NOT NULL,
   `meta_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_post`
@@ -892,7 +892,7 @@ CREATE TABLE `tbl_product` (
   `p_is_featured` int(1) NOT NULL,
   `p_is_active` int(1) NOT NULL,
   `ecat_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_product`
@@ -916,7 +916,7 @@ CREATE TABLE `tbl_product_color` (
   `id` int(11) NOT NULL,
   `color_id` int(11) NOT NULL,
   `p_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_product_color`
@@ -974,7 +974,7 @@ CREATE TABLE `tbl_product_photo` (
   `pp_id` int(11) NOT NULL,
   `photo` varchar(255) NOT NULL,
   `p_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_product_photo`
@@ -1043,7 +1043,7 @@ CREATE TABLE `tbl_product_size` (
   `id` int(11) NOT NULL,
   `size_id` int(11) NOT NULL,
   `p_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_product_size`
@@ -1158,7 +1158,7 @@ CREATE TABLE `tbl_rating` (
   `cust_id` int(11) NOT NULL,
   `comment` text NOT NULL,
   `rating` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1171,7 +1171,7 @@ CREATE TABLE `tbl_service` (
   `title` varchar(255) NOT NULL,
   `content` text NOT NULL,
   `photo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_service`
@@ -1188,7 +1188,7 @@ INSERT INTO `tbl_service` (`id`, `title`, `content`, `photo`) VALUES
 -- Table structure for table `tbl_settings`
 --
 
-CREATE TABLE `tbl_settings` (  `id` int(11) NOT NULL,  `logo` varchar(100) NOT NULL,  `favicon` varchar(100) NOT NULL,  `footer_about` text NOT NULL,  `footer_copyright` text NOT NULL,  `contact_address` text NOT NULL,  `contact_email` varchar(100) NOT NULL,  `contact_phone` varchar(100) NOT NULL,  `contact_fax` varchar(100) NOT NULL,  `contact_map_iframe` text NOT NULL,  `receive_email` varchar(100) NOT NULL,  `receive_email_subject` varchar(100) NOT NULL,  `receive_email_thank_you_message` text NOT NULL,  `forget_password_message` text NOT NULL,  `total_recent_post_footer` int(10) NOT NULL,  `total_popular_post_footer` int(10) NOT NULL,  `total_recent_post_sidebar` int(11) NOT NULL,  `total_popular_post_sidebar` int(11) NOT NULL,  `total_featured_product_home` int(11) NOT NULL,  `total_latest_product_home` int(11) NOT NULL,  `total_popular_product_home` int(11) NOT NULL,  `meta_title_home` text NOT NULL,  `meta_keyword_home` text NOT NULL,  `meta_description_home` text NOT NULL,  `banner_login` varchar(100) NOT NULL,  `banner_registration` varchar(100) NOT NULL,  `banner_forget_password` varchar(100) NOT NULL,  `banner_reset_password` varchar(100) NOT NULL,  `banner_search` varchar(100) NOT NULL,  `banner_cart` varchar(100) NOT NULL,  `banner_checkout` varchar(100) NOT NULL,  `banner_product_category` varchar(100) NOT NULL,  `banner_blog` varchar(100) NOT NULL,  `cta_title` varchar(100) NOT NULL,  `cta_content` text NOT NULL,  `cta_read_more_text` varchar(100) NOT NULL,  `cta_read_more_url` varchar(100) NOT NULL,  `cta_photo` varchar(100) NOT NULL,  `featured_product_title` varchar(100) NOT NULL,  `featured_product_subtitle` varchar(100) NOT NULL,  `latest_product_title` varchar(100) NOT NULL,  `latest_product_subtitle` varchar(100) NOT NULL,  `popular_product_title` varchar(100) NOT NULL,  `popular_product_subtitle` varchar(100) NOT NULL,  `testimonial_title` varchar(100) NOT NULL,  `testimonial_subtitle` varchar(100) NOT NULL,  `testimonial_photo` varchar(100) NOT NULL,  `blog_title` varchar(100) NOT NULL,  `blog_subtitle` varchar(100) NOT NULL,  `newsletter_text` text NOT NULL,  `paypal_email` varchar(100) NOT NULL,  `stripe_public_key` varchar(100) NOT NULL,  `stripe_secret_key` varchar(100) NOT NULL,  `bank_detail` text NOT NULL,  `before_head` text NOT NULL,  `after_body` text NOT NULL,  `before_body` text NOT NULL,  `home_service_on_off` int(11) NOT NULL,  `home_welcome_on_off` int(11) NOT NULL,  `home_featured_product_on_off` int(11) NOT NULL,  `home_latest_product_on_off` int(11) NOT NULL,  `home_popular_product_on_off` int(11) NOT NULL,  `home_testimonial_on_off` int(11) NOT NULL,  `home_blog_on_off` int(11) NOT NULL,  `newsletter_on_off` int(11) NOT NULL,  `ads_above_welcome_on_off` int(1) NOT NULL,  `ads_above_featured_product_on_off` int(1) NOT NULL,  `ads_above_latest_product_on_off` int(1) NOT NULL,  `ads_above_popular_product_on_off` int(1) NOT NULL,  `ads_above_testimonial_on_off` int(1) NOT NULL,  `ads_category_sidebar_on_off` int(1) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `tbl_settings` (  `id` int(11) NOT NULL,  `logo` varchar(100) NOT NULL,  `favicon` varchar(100) NOT NULL,  `footer_about` text NOT NULL,  `footer_copyright` text NOT NULL,  `contact_address` text NOT NULL,  `contact_email` varchar(100) NOT NULL,  `contact_phone` varchar(100) NOT NULL,  `contact_fax` varchar(100) NOT NULL,  `contact_map_iframe` text NOT NULL,  `receive_email` varchar(100) NOT NULL,  `receive_email_subject` varchar(100) NOT NULL,  `receive_email_thank_you_message` text NOT NULL,  `forget_password_message` text NOT NULL,  `total_recent_post_footer` int(10) NOT NULL,  `total_popular_post_footer` int(10) NOT NULL,  `total_recent_post_sidebar` int(11) NOT NULL,  `total_popular_post_sidebar` int(11) NOT NULL,  `total_featured_product_home` int(11) NOT NULL,  `total_latest_product_home` int(11) NOT NULL,  `total_popular_product_home` int(11) NOT NULL,  `meta_title_home` text NOT NULL,  `meta_keyword_home` text NOT NULL,  `meta_description_home` text NOT NULL,  `banner_login` varchar(100) NOT NULL,  `banner_registration` varchar(100) NOT NULL,  `banner_forget_password` varchar(100) NOT NULL,  `banner_reset_password` varchar(100) NOT NULL,  `banner_search` varchar(100) NOT NULL,  `banner_cart` varchar(100) NOT NULL,  `banner_checkout` varchar(100) NOT NULL,  `banner_product_category` varchar(100) NOT NULL,  `banner_blog` varchar(100) NOT NULL,  `cta_title` varchar(100) NOT NULL,  `cta_content` text NOT NULL,  `cta_read_more_text` varchar(100) NOT NULL,  `cta_read_more_url` varchar(100) NOT NULL,  `cta_photo` varchar(100) NOT NULL,  `featured_product_title` varchar(100) NOT NULL,  `featured_product_subtitle` varchar(100) NOT NULL,  `latest_product_title` varchar(100) NOT NULL,  `latest_product_subtitle` varchar(100) NOT NULL,  `popular_product_title` varchar(100) NOT NULL,  `popular_product_subtitle` varchar(100) NOT NULL,  `testimonial_title` varchar(100) NOT NULL,  `testimonial_subtitle` varchar(100) NOT NULL,  `testimonial_photo` varchar(100) NOT NULL,  `blog_title` varchar(100) NOT NULL,  `blog_subtitle` varchar(100) NOT NULL,  `newsletter_text` text NOT NULL,  `paypal_email` varchar(100) NOT NULL,  `stripe_public_key` varchar(100) NOT NULL,  `stripe_secret_key` varchar(100) NOT NULL,  `bank_detail` text NOT NULL,  `before_head` text NOT NULL,  `after_body` text NOT NULL,  `before_body` text NOT NULL,  `home_service_on_off` int(11) NOT NULL,  `home_welcome_on_off` int(11) NOT NULL,  `home_featured_product_on_off` int(11) NOT NULL,  `home_latest_product_on_off` int(11) NOT NULL,  `home_popular_product_on_off` int(11) NOT NULL,  `home_testimonial_on_off` int(11) NOT NULL,  `home_blog_on_off` int(11) NOT NULL,  `newsletter_on_off` int(11) NOT NULL,  `ads_above_welcome_on_off` int(1) NOT NULL,  `ads_above_featured_product_on_off` int(1) NOT NULL,  `ads_above_latest_product_on_off` int(1) NOT NULL,  `ads_above_popular_product_on_off` int(1) NOT NULL,  `ads_above_testimonial_on_off` int(1) NOT NULL,  `ads_category_sidebar_on_off` int(1) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_settings`
@@ -1207,7 +1207,7 @@ CREATE TABLE `tbl_shipping_cost` (
   `shipping_cost_id` int(11) NOT NULL,
   `country_id` int(11) NOT NULL,
   `amount` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_shipping_cost`
@@ -1227,7 +1227,7 @@ INSERT INTO `tbl_shipping_cost` (`shipping_cost_id`, `country_id`, `amount`) VAL
 CREATE TABLE `tbl_shipping_cost_all` (
   `sca_id` int(11) NOT NULL,
   `amount` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_shipping_cost_all`
@@ -1245,7 +1245,7 @@ INSERT INTO `tbl_shipping_cost_all` (`sca_id`, `amount`) VALUES
 CREATE TABLE `tbl_size` (
   `size_id` int(11) NOT NULL,
   `size_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_size`
@@ -1295,7 +1295,7 @@ CREATE TABLE `tbl_slider` (
   `button_text` varchar(255) NOT NULL,
   `button_url` varchar(255) NOT NULL,
   `position` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_slider`
@@ -1317,7 +1317,7 @@ CREATE TABLE `tbl_social` (
   `social_name` varchar(30) NOT NULL,
   `social_url` varchar(255) NOT NULL,
   `social_icon` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_social`
@@ -1354,7 +1354,7 @@ CREATE TABLE `tbl_subscriber` (
   `subs_date_time` varchar(100) NOT NULL,
   `subs_hash` varchar(255) NOT NULL,
   `subs_active` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1366,7 +1366,7 @@ CREATE TABLE `tbl_top_category` (
   `tcat_id` int(11) NOT NULL,
   `tcat_name` varchar(255) NOT NULL,
   `show_on_menu` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_top_category`
@@ -1392,7 +1392,7 @@ CREATE TABLE `tbl_user` (
   `photo` varchar(255) NOT NULL,
   `role` varchar(30) NOT NULL,
   `status` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_user`
@@ -1412,7 +1412,7 @@ CREATE TABLE `tbl_video` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `iframe_code` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbl_video`
