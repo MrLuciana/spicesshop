@@ -12,10 +12,10 @@ $dbhost = 'localhost';
 $dbname = 'spicesshop-db';
 
 // Database Username
-$dbuser = 'root';
+$dbuser = 'mrlu_spicesshop';
 
 // Database Password
-$dbpass = '';
+$dbpass = 'y7^jR282s';
 
 // Defining base url
 define("BASE_URL", "");
