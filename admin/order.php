@@ -223,7 +223,7 @@ if($success_message != '') {
                         </td>
                         <td>
                         	<?php if($row['payment_method'] == 'PayPal'): ?>
-                        		<b>Payment Method:</b> <?php echo '<span style="color:red;"><b>'.$row['payment_method'].'</b></span>'; ?><br>
+                        		<b>Payment Method:</b> <?php echo '<span style="color:red;"><b><p>เก็บเงินปลายทาง</p></b></span>'; ?><br>
                         		<b>Payment Id:</b> <?php echo $row['payment_id']; ?><br>
                         		<b>Date:</b> <?php echo $row['payment_date']; ?><br>
                         		<b>Transaction Id:</b> <?php echo $row['txnid']; ?><br>
