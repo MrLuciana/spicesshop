@@ -80,7 +80,7 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
 						'',
 						'',
 						'',
-						'PayPal',
+						'เก็บเงินปลายทาง',
 						'Pending',
 						'Pending',
 						$item_number
