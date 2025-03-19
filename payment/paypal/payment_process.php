@@ -190,11 +190,11 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
 	unset($_SESSION['cart_p_featured_photo']);
 
 	
-	// if($sql){
-	// 	// Redirect to paypal IPN
-	// 	header('location:https://www.paypal.com/cgi-bin/webscr'.$querystring);
-	// 	exit();
-	// }
+	if($sql){
+		// Redirect to paypal IPN
+		header('location: ../customer-order.php'.$querystring);
+		exit();
+	}
 	
 } else {
 
