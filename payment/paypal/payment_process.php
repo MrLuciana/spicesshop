@@ -192,7 +192,7 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
 	
 	if($sql){
 		// Redirect to paypal IPN
-		header('location: ../customer-order.php'.$querystring);
+		header('location: ../../customer-order.php'.$querystring);
 		exit();
 	}
 	
