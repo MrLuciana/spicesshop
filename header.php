@@ -242,7 +242,7 @@ foreach ($result as $row) {
 </div>-->
 
 <!-- top bar -->
-<div class="top">
+<!-- <div class="top">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -273,7 +273,7 @@ foreach ($result as $row) {
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <div class="header">
@@ -345,7 +345,7 @@ foreach ($result as $row) {
 				<div class="menu-container">
 					<div class="menu">
 						<ul>
-							<li><a href="index.php">Home</a></li>
+							<li><a href="index.php">หน้าหลัก</a></li>
 							
 							<?php
 							$statement = $pdo->prepare("SELECT * FROM tbl_top_category WHERE show_on_menu=1");
