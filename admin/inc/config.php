@@ -6,7 +6,7 @@ ini_set('error_reporting', E_ALL);
 date_default_timezone_set('Asia/bangkok');
 
 // Host Name
-$dbhost = 'localhost';
+$dbhost = 'spicesshop.mrluciana.com';
 
 // Database Name
 $dbname = 'spicesshop-db';
